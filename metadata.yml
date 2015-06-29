@@ -1,0 +1,67 @@
+--- !ruby/object:Gem::Specification
+name: torquebox-no-op
+version: !ruby/object:Gem::Version
+  version: 3.1.2
+platform: ruby
+authors:
+- The TorqueBox Team
+autorequire:
+bindir: bin
+cert_chain: []
+date: 2015-04-08 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rspec
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - '='
+      - !ruby/object:Gem::Version
+        version: 2.7.0
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - '='
+      - !ruby/object:Gem::Version
+        version: 2.7.0
+  prerelease: false
+  type: :development
+description: ''
+email:
+- torquebox-dev@torquebox.org
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- licenses/cc0-1.0.txt
+- lib/torquebox-no-op.rb
+- lib/torquebox/no-op/transactions.rb
+- lib/torquebox/no-op/messaging.rb
+- lib/torquebox/no-op/injectors.rb
+- lib/torquebox/no-op/version.rb
+- lib/torquebox/no-op/stomp.rb
+- spec/injectors_spec.rb
+homepage: http://torquebox.org/
+licenses:
+- Public Domain
+metadata: {}
+post_install_message:
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project:
+rubygems_version: 2.1.9
+signing_key:
+specification_version: 4
+summary: TorqueBox No-Op Gem
+test_files:
+- spec/injectors_spec.rb
