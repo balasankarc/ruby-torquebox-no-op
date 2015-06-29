@@ -1,0 +1,26 @@
+Description: Migrate tests to RSpec3
+ Change should_not from RSpec 2 to the newer expect syntax of RSpec 3 to avoud
+ deprecation warnings
+Author: Balasankar C <balasankarc@autistici.org>
+Forwarded: not-needed
+Last-Update: 2015-06-14
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/spec/injectors_spec.rb
++++ b/spec/injectors_spec.rb
+@@ -21,13 +21,13 @@
+   include TorqueBox::Injectors
+ 
+   it 'should not error or return nil' do
+-    fetch('foo').should_not be_nil
++    expect(fetch('foo')).not_to be_nil
+   end
+ end
+ 
+ describe 'TorqueBox::Injectors without include' do
+ 
+   it 'should not error or return nil' do
+-    TorqueBox.fetch('foo').should_not be_nil
++    expect(TorqueBox.fetch('foo')).not_to be_nil
+   end
+ end
