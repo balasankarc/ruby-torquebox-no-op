@@ -1,5 +1,5 @@
-ruby-torquebox-no-op (3.1.2-1) UNRELEASED; urgency=medium
+ruby-torquebox-no-op (3.1.2-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)
+  * Initial release (Closes: #790476)
 
- -- Balasankar C <balasankarc@autistici.org>  Mon, 29 Jun 2015 23:07:06 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Sun, 14 Jun 2015 11:24:45 +0530

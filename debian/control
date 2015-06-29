@@ -20,4 +20,8 @@ XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: TorqueBox No-Op Gem
+Description: emulate TorqueBox APIs outside of TorqueBox
+ This gem allows you to run some TorqueBox applications outside of TorqueBox by 
+ emulating the APIs provided by TorqueBox. Its primary goal is to enable simple 
+ testing of applications that use TorqueBox APIs without having to test those 
+ applications inside TorqueBox itself.
